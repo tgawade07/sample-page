@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write your CSS Code here */
-    .flag{
-      background-color: orange;
-      position: relative;
-      width: 500px;
-      height: 300px;
-    }
-    .flag > div{
-      background-color: white;
-      height: 100px;
-      width: 500px;
-      position: relative;
-      top: 65px;
-      
-    }
-    .flag > div >div{
-      background-color: blue;
-      position: absolute;
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      left: 38%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p></p>
-      </div>
-    </div>
-  </div>
+    <!-- name contact  dob email gender languages  -->
+    <form class="form" action="#">
+        <h1>Registration Form</h1>
+       <b>Name:</b> <input type="text" value="" placeholder="enter your name "><br><br>
+       <b>contact:</b><input type="text" name="number"><br><br>
+       <b>Email:</b><input type="email" name="email"><br><br>
+       <b>DOB:</b><input type="date" name="date" value="date"> <br><br>
+       <b>Gender:</b> <br><br>
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="male">female</label>
+       <input type="radio" id="other" name="gender" value="other">
+       <label for="male">other</label>
+       <br><br>
+       <label for="lang"><b>Language Known:</b></label><br><br>
+       <input type="checkbox" id="eng" name="eng" value="eng">
+       <label for="eng">English</label><br>
+       <input type="checkbox" id="eng" name="eng" value="eng">
+       <label for="eng">Hindi</label><br>
+       <input type="checkbox" id="eng" name="eng" value="eng">
+       <label for="eng">Marathi</label><br><br><br>
+       <input type="file" id="file" name="filename">
+       <br><br><br><br>
+       <input type="submit" id="submit" value="submit">
+       <input type="reset" id="reset" value="reset">
+    </form>
 </body>
-
 </html>
